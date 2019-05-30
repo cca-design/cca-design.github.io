@@ -1,0 +1,59 @@
+figure {
+    width: 265px;
+    height: 57px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+figure:hover+span {
+    bottom: -36px;
+    opacity: 1;
+}
+
+.hover11 figure img {
+    opacity: 1; 
+}
+
+.hover11 figure:hover img {
+    opacity: .5;
+}
+
+.button {
+    padding: 0px 0px;
+    font-size: 0px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #154CA6;
+    background-color: #154CA6;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 4px #154CA6;
+}
+  
+.button:hover {
+    background-color: #8AA5D2;
+    box-shadow: 0 4px #8AA5D2;
+}
+  
+.button:active {
+    background-color: #154CA6;
+    box-shadow: 0 1px #154CA6;
+    transform: translateY(4px);
+}
+
+.crushbutton {
+    width: 265px;
+    height: 57px;
+    border-radius: 3px;
+    background-image: linear-gradient(95deg, #2176ff, #2cb2e9);
+  }
+
+  .brandingbutton {
+    width: 265px;
+    height: 57px;
+    border-radius: 3px;
+    background-color: #2176ff;
+  }

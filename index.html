@@ -11,19 +11,40 @@
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
   <style>
+    figure {
+	    width: 265px;
+	    height: 57px;
+	    margin: 0;
+	    padding: 0;
+	    background: #fff;
+	    overflow: hidden;
+      }
+    figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+        }
+    .hover11 figure img {
+	    opacity: 1;
+      }
+    .hover11 figure:hover img {
+	    opacity: .5;
+      }
     .button {
         padding: 0px 0px;
         font-size: 0px;
         text-align: center;
         cursor: pointer;
         outline: none;
-        color: #fff;
+        color: #154CA6;
+        background-color: #ffffff;
         border: none;
         border-radius: 3px;
         box-shadow: 0 4px #154CA6;
       }
       
-      .button:hover {background-color: RGBA(255, 255, 255, 1.0)}
+      .button:hover {background-color: #8AA5D2;
+      box-shadow: 0 4px #8AA5D2;
+        }
       
       .button:active {
         background-color: #154CA6;
@@ -34,8 +55,31 @@
 </head>
 
 <body>
-    <p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://github.com/cca-design/branding/blob/master/images/preview.jpg?raw=true" alt="" width="200" height="200" /></p>
-    <p style="text-align: center;"><a href="sketch://add-library?url=https%3A%2F%2Fcca-design.github.io%2Fcca-branding.xml"><button class="button"> <img src="https://github.com/cca-design/cca-design.github.io/blob/master/images/branding.png?raw=true" width="265" height="57" caption="false" /></button></a></p>
-    <p style="text-align: center;"><a href="sketch://add-library?url=https%3A%2F%2Fcca-design.github.io%2Fcrush.xml"><button class="button"><img src="https://github.com/cca-design/cca-design.github.io/blob/master/images/crush.png?raw=true" width="265" height="57" caption="false" /></button></a></p>
+    <p>
+      <img style="display: block; margin-left: auto; margin-right: auto;" src="https://github.com/cca-design/branding/blob/master/images/preview.jpg?raw=true" alt="" width="200" height="200" />
+    </p>
+    
+    <div class="hover11">
+      <p style="text-align: center;">
+        <a href="sketch://add-library?url=https%3A%2F%2Fcca-design.github.io%2Fcca-branding.xml">
+          <button class="button"> 
+            <figure>
+              <img src="https://github.com/cca-design/cca-design.github.io/blob/master/images/branding.png?raw=true" width="265" height="57" caption="false" />
+            </figure>
+          </button>
+        </a>
+      </p>
+    </div>
+    
+    <div class="hover11">
+      <p style="text-align: center;">
+        <a href="sketch://add-library?url=https%3A%2F%2Fcca-design.github.io%2Fcrush.xml">
+          <button class="button">
+            <figure>
+              <img src="https://github.com/cca-design/cca-design.github.io/blob/master/images/crush.png?raw=true" width="265" height="57" caption="false" />
+            </figure>
+          </button>
+        </a>
+      </p>
 </body>
 </html>
